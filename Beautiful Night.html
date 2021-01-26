@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+<style> body { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  min-height:100vh; background-image:url("https://wallpapercave.com/wp/yo46nFM.jpg");
+  background-attachment:fixed;
+  background-position:cover;
+}
+
+.moon{
+  position: fixed;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color:rgb(238, 238, 238);
+  box-shadow:
+      0px -25px  8px -22px rgba(255, 255, 255, .7) inset,
+    -10px -20px 25px   0px rgba(0, 0, 0, .3) inset,
+      0px -50px 40px   0px rgba(0, 0, 0, .4) inset;
+     animation:rotate 6s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg); 
+    }
+}
+.moon:before{
+    content:'';
+    height:60px;
+    width:60px;
+    margin:-55px;
+    background-color:white;
+    border-radius:50%;
+    position:absolute;
+}
+.moon:after{
+    content:'';
+    height:15px;
+    width:15px;
+    margin:-40px;
+    background-color:rgba(0, 0, 0, .1);
+    box-shadow:25px 0px 0px rgba(0, 0, 0, .1),
+  0px 0px 10px gray;
+    border-radius:50%;
+    position:absolute;
+}
+</Styles>
+    </head>
+    <body>
+    <div class="moon">
+    </div>
+    </body>
+</html>
